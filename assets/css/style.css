@@ -6,7 +6,8 @@ body {
 
 header {
 display: flex;
-    margin-top: 70px;
+align-items: center;
+    margin-top: 6%;
     background-image: url(../../images/marble.png);
     border: 2px solid black;
     width: 100%;
@@ -17,36 +18,34 @@ display: flex;
 header div {
     background: gold ;
     color: rgb(66, 65, 65);
-    font-size: 70px;
+    font-size: 100px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: 0px 0px 7px white;
-    padding: 7px;
+    padding: 20px;
+    
     text-align: center;
-    width:300px ;
+    
     border-radius: 4px;
     box-shadow: 0px 0px 9px 5px black;
     
 }
 
 .me {
-    position: absolute;
-    left: 85%;
-    bottom: 980px;
+    margin-left: 10%;
     border-radius: 100%;
     border:  2px solid gold;
     box-shadow: 0px 0px 4px 4px black;
 }
 
 nav {
-    width: 100%;
+    width: max-content;
 }
 
 nav ul {
     display: flex;
     
     text-decoration: none;
-    width: 100%;
-    margin-top: 30px;
+    ;
     
     
 }    
