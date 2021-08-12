@@ -6,6 +6,8 @@ body {
 
 header {
 display: flex;
+flex-direction: row;
+justify-content: space-around;
 align-items: center;
     margin-top: 6%;
     background-image: url(../../images/marble.png);
@@ -15,14 +17,13 @@ align-items: center;
     
     
 }
-header div {
+.name {
     background: gold ;
     color: rgb(66, 65, 65);
-    font-size: 100px;
+    font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: 0px 0px 7px white;
     padding: 20px;
-    
     text-align: center;
     
     border-radius: 4px;
@@ -31,7 +32,7 @@ header div {
 }
 
 .me {
-    margin-left: 10%;
+    
     border-radius: 100%;
     border:  2px solid gold;
     box-shadow: 0px 0px 4px 4px black;
@@ -39,25 +40,24 @@ header div {
      height:170px;
 }
 
-nav {
-    width: max-content;
-}
+
 
 nav ul {
     display: flex;
-    
+    justify-content: space-between;
+    align-items: center;
     text-decoration: none;
-    ;
+   width: 500px;
     
     
 }    
     
 
 nav li {
-    display: flex;
-    margin-left: 10%;
-    width: 250px;
-    font-size: 40px;
+   display: flex;
+   justify-content: center;
+    
+    font-size: 30px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 }
@@ -70,26 +70,23 @@ nav li {
 
 nav a:hover {
     text-shadow: 0px 0px 5px gold;
-    font-size: 45px;
+    font-size: 35px;
+    transition: 300ms;
 }
 
 h1 {
-    position: relative;
     left: 30%;
     text-align: center;
     font-size: 60px;
-    border-bottom: 2px solid black;
-    width:40%;
+   
+    width:100%;
    
 }
 
 p{ 
     background-image: url(../../images/marble.png);
     
-    margin-top: 60px;
-    bottom: 31px;
-    margin-left: 190px;
-    margin-right: 100px;
+   
     font-size: 30px;
     text-align: left;
     border: 2px solid black;
@@ -97,29 +94,50 @@ p{
     padding: 50px;
     
 }
-section{
-    text-align: center;
-    font-size: 60px;
-    border-bottom: 2px solid black;
-    
-    ;
+.skills {
+    display: flex;
+    justify-content: space-around;
 }
+
+.htmllogo {
+    width: 200px;
+    height: 200px;
+}
+.csslogo {
+    width: 130px;
+    height: 200px;
+    margin-left: 80px;
+}
+.javascriptlogo {
+    width: 320px;
+    height: 200px;
+}
+.works {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .homework{
     margin-top: 10%;
     border: 4px solid gold;
-    width:900px;
-     height:600px;
+    width:600px;
+     height:300px;
     border-radius: 20px;
     opacity: 70%;
 
 }
 
 .homework:hover {
+
     box-shadow: 0px 0px 15px 8px black;
     opacity: 100%;
+    
 }
 
 .shop {
+    width: 600px;
+    height: 300px;
     margin-top: 10%;
     opacity: 70%;
     border: 4px solid gold;
@@ -131,32 +149,11 @@ section{
     opacity: 100%;
 }
 
-main { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    
-    
-}
 
-h3 {position: relative;
-    left: 30%;
-    text-align: center;
-    font-size: 60px;
-    border-bottom: 2px solid black;
-    width:40%;
-
-}
-
-h4 {
-    font-size: 50px;
-}
 
 footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+   justify-content: space-between;
     text-shadow: 0px 0px 7px white,0px 0px 7px white;
    
 } 
@@ -165,75 +162,45 @@ footer {
      height:80px;
 
 }
+
+.github:hover{
+    width:160px;
+     height:90px;
+     -webkit-filter: drop-shadow(0px 5px 5px black);
+    filter:         drop-shadow(0px 5px 5px black); 
+    transition: 200ms;
+}
 .instagram {
     width:80px; 
     height:80px;
 }
+.instagram:hover {
+    width:90px; 
+    height:90px;
+    -webkit-filter: drop-shadow(0px 5px 5px black);
+    filter:         drop-shadow(0px 5px 5px black); 
+    transition: 200ms;
+}
 .twitter {
- margin-left: 40px;
+ 
  width:100px;
   height:80px;
 }
+.twitter:hover {
+ 
+ width:110px;
+  height:90px;
+  -webkit-filter: drop-shadow(0px 5px 5px black);
+  filter:         drop-shadow(0px 5px 5px black); 
+  transition: 200ms;}
 
+.cellnum {
+    font-size: 35px;
+    width: 300px;
+}
 
 @media screen and (max-width: 450px) {
-    header {
-        width: min-content;
-    }
-    header div {
-        height: min-content;
-    }
-
-    nav li {
-        font-size: 60px;
-    }
-
-    .me {
-        width: 300px;
-         height:300px;
-    }
-
-    h1 {position: relative;
-        left: 400px;
-        font-size: 120px;
-        width: 700px;
-    }
-    p {
-        font-size: 70px;
-        width:900px;
-        margin-left: 250px;
-        margin-right: 100px;
-        
-    }
-    section {
-        margin-left: 1200px;
-        font-size: 120px;
-    }
-
-    .homework {
-width: 1000px;
-height: 700px;
-margin-left: 60%;
-    }
-    .shop {
-        margin-left: 85%;
-    }
-    
-        h3 {
-            position: relative;
-            left:600px;
-            font-size: 120px;
-            width: 60%;
-
-        }
-         h4 {
-             font-size: 90px;
-         }
-         
-         footer {
-             margin-left: 500px;
-             width: 500px
-         }
+  
     }
     
 
