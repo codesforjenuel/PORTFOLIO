@@ -31,9 +31,10 @@ is more readable and content is aligned for a better experience to the user.
 
 ### SCREENSHOT
 
-Here is an image of my working application.
+Here is 2 images of my working application.
 
-![screenshot](./images/screenshot2.png)
+![screenshot](./images/screen1.png)
+![screenshot](./images/screen2.png)
 
 ### REPOSITORY LINK
 
